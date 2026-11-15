@@ -1,0 +1,16 @@
+{
+  "name": "elite-fitness-gym-kampala",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:artifact": "node scripts/check-artifact.mjs",
+    "export:github": "node scripts/export-github.mjs",
+    "hash:password": "node scripts/hash-password.mjs"
+  }
+}

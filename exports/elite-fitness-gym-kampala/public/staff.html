@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#182019">
+  <title>Staff portal · Elite Fitness Gym Kampala</title>
+  <link rel="stylesheet" href="/staff.css">
+  <script src="/config.js" defer></script>
+  <script src="/staff.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to staff workspace</a>
+  <div id="boot" class="boot"><span class="brand-mark" aria-hidden="true">E</span><p>Opening your staff workspace…</p></div>
+  <section id="login-view" class="login-view" hidden>
+    <div class="login-visual"><a href="/" class="brand"><span class="brand-mark" aria-hidden="true">E</span><span>ELITE FITNESS<small>GYM KAMPALA</small></span></a><div class="login-message"><span class="eyebrow">THE PEOPLE BEHIND THE PROGRESS</span><h1>YOUR WORK.<br><span>YOUR IMPACT.</span></h1><p>One place for your schedule, pay records,<br>member feedback, and next steps.</p></div><span class="login-location">KAMPALA, UGANDA <span>STAFF WORKSPACE ↗</span></span></div>
+    <div class="login-panel"><a class="back-link" href="/">← Back to the gym</a><div class="login-form-wrap"><span class="eyebrow">YOUR TEAM. YOUR SPACE.</span><h2>Welcome to work.</h2><p>Use the unique staff ID and password provided by your administrator.</p><form id="login-form"><label>Staff ID<input name="staff_id" id="login-id" required maxlength="60" placeholder="EFS-XXXXXXXX" autocomplete="username" autocapitalize="characters" spellcheck="false"></label><label>Password<span class="password-wrap"><input name="password" id="login-password" type="password" required maxlength="128" autocomplete="current-password" placeholder="Your staff password"><button type="button" id="show-password" aria-label="Show password">Show</button></span></label><p id="login-error" class="form-error" role="alert" hidden></p><button class="button primary full" type="submit">Sign in to my workspace <span>↗</span></button></form><p class="login-help">First time here? You will be asked to set your own password. For lost access, ask your administrator to reset it.</p></div><p class="copyright">© <span class="current-year"></span> Elite Fitness Gym Kampala. All rights reserved.</p></div>
+  </section>
+  <div id="staff-app" class="staff-app" hidden>
+    <header class="topbar"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">E</span><span>ELITE FITNESS<small>STAFF WORKSPACE</small></span></a><div class="topbar-actions"><span id="staff-label"></span><button class="icon-button" id="refresh" aria-label="Refresh staff records" title="Refresh staff records">↻</button><button class="button quiet" id="logout">Sign out ↗</button></div></header>
+    <div class="workspace-shell"><nav id="staff-nav" class="staff-nav" aria-label="Staff workspace"><button data-tab="overview" class="active">Overview <span>↗</span></button><button data-tab="attendance">My attendance <span>◷</span></button><button data-tab="payroll">Pay & advances <span>◎</span></button><button data-tab="sessions">Sessions & feedback <span>✳</span></button><button data-tab="tasks">My tasks <span>✓</span></button><button data-tab="leave">Leave requests <span>▦</span></button><button data-tab="profile">Profile & security <span>⌁</span></button></nav><main id="workspace" tabindex="-1"><div id="page-heading"></div><div id="page-content"></div></main></div>
+    <footer class="workspace-footer"><span>© <span class="current-year"></span> Elite Fitness Gym Kampala. All rights reserved.</span><span>East Africa Time · All amounts in UGX</span><a href="/admin">Admin access ↗</a></footer>
+  </div>
+  <dialog id="staff-dialog" class="staff-dialog"><div class="dialog-heading"><div><span id="dialog-eyebrow" class="eyebrow">ELITE / YOUR WORKSPACE</span><h2 id="dialog-title"></h2></div><button id="close-dialog" class="icon-button" aria-label="Close dialog">×</button></div><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <div id="print-stage"></div>
+</body>
+</html>
