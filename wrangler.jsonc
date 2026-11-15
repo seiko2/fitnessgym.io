@@ -1,0 +1,18 @@
+{
+  // Copy this file to wrangler.jsonc and fill in your own D1 database UUID.
+  "name": "elite-fitness-gym-kampala",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-11-15",
+  "workers_dev": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "elite-fitness-gym-kampala",
+      "database_id": "aa1ce453-da38-4337-af1c-c58e9a3d97a7",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "vars": {
+    "PUBLIC_ORIGINS": "https://seiko2.github.io"
+  }
+}
